@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   
   <!-- 🖼️ [แก้ได้] เปลี่ยน favicon / app icon โดยแก้ URL ในทั้ง 3 บรรทัดนี้ -->
-  <link rel="apple-touch-icon" href="https://i.ibb.co/1Cf8JTS/S-4620317.jpg">
-  <link rel="icon" sizes="192x192" href="https://i.ibb.co/1Cf8JTS/S-4620317.jpg">
-  <link rel="shortcut icon" href="https://i.ibb.co/1Cf8JTS/S-4620317.jpg">
+  <link rel="apple-touch-icon" href="https://i.ibb.co/dJJ73QqJ/641458825-1403287041044450-1321614774150964516-n.jpg">
+  <link rel="icon" sizes="192x192" href="https://i.ibb.co/dJJ73QqJ/641458825-1403287041044450-1321614774150964516-n.jpg">
+  <link rel="shortcut icon" href="https://i.ibb.co/dJJ73QqJ/641458825-1403287041044450-1321614774150964516-n.jpg">
   
   <!-- ⚙️ [อย่าแก้] React, Babel, Tailwind - library หลักของแอป -->
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -123,7 +123,7 @@
             <div className="flex items-center gap-1">
               <h1 className="text-2xl font-black italic tracking-tighter flex">
                 {/* ✏️ [แก้ได้] เปลี่ยนชื่อแอปที่นี่ เช่น "MYSHOP".split('') */}
-                {"องุ่นหวาน".split('').map((char, index) => (
+                {"Babybear".split('').map((char, index) => (
                   <span key={index} className="bg-gradient-to-br from-[#9673D2] to-[#CCAAE6] bg-clip-text text-transparent drop-shadow-sm inline-block animate-text-wave" style={{ animationDelay: `${index * 0.1}s` }}>{char}</span>
                 ))}
               </h1>
@@ -477,7 +477,7 @@
       // 🌐 API: ลิงก์ Google Apps Script Web App
       // ==========================================
       // ✏️ [แก้ได้] เปลี่ยน URL ตรงนี้เมื่อ Deploy Google Apps Script ใหม่
-      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxn7voxUTwdnFdPhjiOdV0czWvPtzdtFHbNZzyKLacPebOFZTtAHIWNF8PYLeGqd7HQpA/exec";
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlNIVZ46hylaXgUT1aqeX-CzaXKPqYiz-zvuizG9jetDH5_1LMWX2RTb1sP_Kz6VytSQ/exec";
 
       // ฟังก์ชันเรียก API (POST) — ไม่ต้องแก้
       const fetchAPI = async (payload) => {
@@ -499,7 +499,7 @@
       // ==========================================
       // ✏️ [แก้ได้] เปลี่ยน document.title เป็นชื่อแท็บที่ต้องการ
       useEffect(() => {
-        document.title = "LILAC CHECK Q"; // ✏️ ชื่อ tab บน browser
+        document.title = "Babybear Studio"; // ✏️ ชื่อ tab บน browser
         
         fetch(WEB_APP_URL + "?action=getInitialData")
           .then(res => res.json())
@@ -1072,4 +1072,5 @@
   </script>
 </body>
 </html>
+
 
